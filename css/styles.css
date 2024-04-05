@@ -95,6 +95,23 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
   display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.current {
+  position: relative;
+  color: #404bbf;
+}
+
+.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  background-color: #404bbf;
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
 }
 
 .header-menu-link:hover {
@@ -119,6 +136,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-address-link:hover {
@@ -276,6 +294,9 @@ img {
   background-color: #ffffff;
   width: calc((100% - 3 * 24px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: #fff;
 }
 
 .main-section-image {
@@ -361,6 +382,21 @@ img {
   width: calc((100% - 2 * 24px) / 3);
 }
 
+.benefits-item:hover .benefits-cover-text {
+  transform: translateY(0);
+}
+
+.benefits-cover-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.benefits-item:hover {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: #fff;
+}
+
 .wrap-benefits-item {
   border: 1px solid #e7e9fc;
   border-top: none;
@@ -382,6 +418,20 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+.benefits-cover-text {
+  position: absolute;
+  top: 0;
+  background-color: #4d5ae5;
+  height: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding: 40px 32px 0 32px;
+  transform: translateY(100%);
+  transition: transform 250ms linear;
 }
 
 /* ----------------------------------------------------- */
