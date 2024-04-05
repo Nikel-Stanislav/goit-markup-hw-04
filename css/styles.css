@@ -47,6 +47,8 @@ img {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-nav {
@@ -192,6 +194,7 @@ img {
   border-radius: 4px;
   padding: 16px 32px;
   min-width: 169px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-button:hover {
@@ -205,7 +208,6 @@ img {
 /* ----------------------------------------------------- */
 
 /* ----------------------2 SECTION------------------------------- */
-
 .features-section {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -346,6 +348,7 @@ img {
   align-items: center;
   justify-content: center;
   fill: white;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .picture-icon-link:hover {
@@ -380,6 +383,7 @@ img {
 
 .benefits-item {
   width: calc((100% - 2 * 24px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .benefits-item:hover .benefits-cover-text {
@@ -429,7 +433,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  padding: 40px 32px 0 32px;
+  padding: 40px 32px 40px 32px;
   transform: translateY(100%);
   transition: transform 250ms linear;
 }
@@ -446,6 +450,7 @@ img {
 
 .footer-logo-text {
   display: flex;
+  align-items: baseline;
 }
 
 .logo-text {
@@ -507,6 +512,7 @@ img {
   align-items: center;
   justify-content: center;
   fill: white;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-link:hover {
